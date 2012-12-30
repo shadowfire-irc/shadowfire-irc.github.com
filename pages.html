@@ -1,13 +1,49 @@
 ---
 layout: page
-title: Pages 
-header: Pages
+title: Knowledge Base
+header: Knowledge Base
 group: navigation
 ---
 {% include JB/setup %}
 
-<h2>All Pages</h2>
+<h2>General</h2>
 <ul>
 {% assign pages_list = site.pages %}
+{% assign group = 'general' %}
+{% include JB/pages_list %}
+</ul>
+
+<h2>NickServ</h2>
+<ul>
+{% assign pages_list = site.pages %}
+{% assign group = 'nickserv' %}
+{% include JB/pages_list %}
+</ul>
+
+<h2>ChanServ</h2>
+<ul>
+{% assign pages_list = site.pages %}
+{% assign group = 'chanserv' %}
+{% include JB/pages_list %}
+</ul>
+
+<h2>AresServ</h2>
+<ul>
+{% assign pages_list = site.pages %}
+{% assign group = 'aresserv' %}
+{% include JB/pages_list %}
+</ul>
+
+<h2>Modes</h2>
+<ul>
+{% assign pages_list = site.pages %}
+{% assign group = 'modes' %}
+{% include JB/pages_list %}
+</ul>
+
+<h2>Support</h2>
+<ul>
+{% assign pages_list = site.pages %}
+{% assign group = 'support' %}
 {% include JB/pages_list %}
 </ul>
